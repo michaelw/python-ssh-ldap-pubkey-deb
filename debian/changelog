@@ -1,0 +1,5 @@
+python-ssh-ldap-pubkey (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Michael Weber <mweber@instartlogic.com>  Tue, 25 Oct 2016 15:46:44 -0700
