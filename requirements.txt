@@ -1,0 +1,6 @@
+pycodestyle
+pypandoc
+pytest
+pytest-cov
+pytest-describe
+pytest-mock
