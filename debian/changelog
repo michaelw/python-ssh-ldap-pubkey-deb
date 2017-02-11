@@ -1,3 +1,10 @@
+python-ssh-ldap-pubkey (1.0.0-2) precise; urgency=low
+
+  * Depend on python-support for precise
+  * add ca-certificates dependency
+
+ -- Michael Weber <mweber@instartlogic.com>  Fri, 10 Feb 2017 23:55:54 -0800
+
 python-ssh-ldap-pubkey (1.0.0-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>

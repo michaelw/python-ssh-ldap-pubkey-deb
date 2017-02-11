@@ -9,8 +9,19 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+DIST := $(shell lsb_release -sr)
+
+ifeq ($(DIST),12.04)
+	SUBSTVARS = -Vdist:Depends="python-support"
+else
+	SUBSTVARS = -Vdist:Depends=""
+endif
+
 %:
-	dh $@ 
+	dh $@
+
+override_dh_gencontrol:
+	dh_gencontrol -- $(SUBSTVARS)
 
 override_dh_clean:
 	rm -rf ssh_ldap_pubkey.egg-info/

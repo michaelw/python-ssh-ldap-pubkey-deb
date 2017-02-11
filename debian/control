@@ -2,12 +2,12 @@ Source: python-ssh-ldap-pubkey
 Section: misc
 Priority: extra
 Maintainer: Michael Weber <mweber@instartlogic.com>
-Build-Depends: debhelper (>= 8.0.0), python-dev
+Build-Depends: debhelper (>= 8.0.0), python-dev, lsb-release
 Standards-Version: 3.9.2
 Homepage: https://github.com/jirutka/ssh-ldap-pubkey
 
 Package: python-ssh-ldap-pubkey
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, python-ldap, python-docopt
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${dist:Depends}, python-ldap, python-docopt, ca-certificates
 Description: Utility to manage SSH public keys stored in LDAP
  Utility to manage SSH public keys stored in LDAP.
